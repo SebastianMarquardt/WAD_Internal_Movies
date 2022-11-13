@@ -22,7 +22,7 @@ function displayMovie(data) {
         movieList.appendChild(listItem);
 
         const link = document.createElement("a");
-        link.href = "Details#" + (i + 1);
+        link.href = "Details.html?movie=" + (i + 1);
         link.innerHTML = movieName;
         listItem.appendChild(link);
     }
