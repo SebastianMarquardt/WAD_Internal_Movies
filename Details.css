@@ -1,0 +1,36 @@
+body {
+    color: #FFE81F;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    Justify-content : flex-start;
+    margin-top: 40px;
+}
+
+li {
+    display: flex;
+    margin-right: 2%;
+}
+
+#infoCategoryName {
+    background-color: black;
+}
+
+#informationUl {
+    background-color: black;
+}
+
+#categoryName {
+    margin-right: 3%px;
+    background-color: black;
+}
+
+#species, #starships, #vehicles, #characters, #planets {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}

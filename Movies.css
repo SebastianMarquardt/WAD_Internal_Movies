@@ -1,0 +1,38 @@
+body {
+    color: #FFE81F;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+input {
+    margin-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+li {
+    margin-top: 10px;
+}
+
+a:link {
+    color: #FFE81F;
+}
+
+a:visited {
+    color: #FFE81F;
+}
+
+a:hover {
+    color: #ffe91fd0;
+}
+
+a:active {
+    color: #FFE81F;
+}
