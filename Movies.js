@@ -34,7 +34,7 @@ input.onkeyup = function () {
     var lis = document.getElementsByTagName("li");
     for (var i = 0; i < lis.length; i++) {
         var name = lis[i].name.toUpperCase();
-        if (name.includes(filter)) 
+        if (name.includes(filter))
             lis[i].style.display = "list-item";
         else
             lis[i].style.display = "none";

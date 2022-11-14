@@ -7,7 +7,7 @@ body {
 ul {
     flex-direction: column;
     flex-wrap: wrap;
-    Justify-content : flex-start;
+    Justify-content: flex-start;
     margin-top: 40px;
 }
 
@@ -29,7 +29,11 @@ li {
     background-color: black;
 }
 
-#species, #starships, #vehicles, #characters, #planets {
+#species,
+#starships,
+#vehicles,
+#characters,
+#planets {
     display: flex;
     flex-direction: row;
     background-color: black;

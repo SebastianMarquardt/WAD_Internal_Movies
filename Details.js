@@ -17,7 +17,7 @@ fetch("https://swapi.dev/api/films/" + movie)
     })
     .catch((error) => console.error("FETCH ERROR:", error));
 
-function displayInformation(data) {  
+function displayInformation(data) {
     createListItem("title", data.title);
     createListItem("episode_id", data.episode_id);
     createListItem("opening_crawl", data.opening_crawl);
@@ -30,7 +30,7 @@ function displayInformation(data) {
     JSONLinkHandler("vehicles", data.vehicles);
     JSONLinkHandler("characters", data.characters);
     JSONLinkHandler("planets", data.planets);
-    
+
 }
 
 function createListItem(categoryName, name) {
@@ -62,17 +62,17 @@ function JSONLinkHandler(categoryName, linkJSON) {
 
 function fetchInformation(categoryName, url) {
     fetch(url)
-    .then((response) => {
-        if (response.ok) {
-            return response.json();
-        } else {
-            throw new Error("NETWORK RESPONSE ERROR");
-        }
-    })
-    .then(data => {
-        createInformationList(categoryName, data.name);
-    })
-    .catch((error) => console.error("FETCH ERROR:", error));
+        .then((response) => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error("NETWORK RESPONSE ERROR");
+            }
+        })
+        .then(data => {
+            createInformationList(categoryName, data.name);
+        })
+        .catch((error) => console.error("FETCH ERROR:", error));
 }
 
 function createInformationList(categoryName, DataName) {
